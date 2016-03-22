@@ -1,0 +1,32 @@
+/* RECENT POSTS -----------------------------------------------*/
+
+.recent-post{
+	margin-bottom: 21px;
+	overflow: hidden;
+}
+
+
+
+.recent-post .thumb{
+	display: block;
+	float: left;
+}
+
+.recent-post .post-head{
+	width: 153px;
+	display: block;
+	float: right;
+}
+
+.recent-post .post-head2{
+	width: 160px;
+	display: block;
+	float: left;
+}
+
+
+.tabulado {text-indent: 100px;}
+
+.recent-post span{
+	display: block;
+}

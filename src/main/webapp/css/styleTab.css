@@ -1,0 +1,28 @@
+.panelTab{
+    width:50%;
+}
+ 
+.tabs{
+    margin:0;
+    padding: 0;
+}
+ 
+.tabs li{
+    float: left;
+    list-style: none;
+}
+ 
+.tabs a{
+    display: block;
+    text-decoration: none;
+    padding: 3px 5px;
+}
+ 
+.panelContenedor {
+    clear: left;
+}
+ 
+.panel h2{
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}

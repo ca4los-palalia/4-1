@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"  
+	    xmlns:h="http://java.sun.com/jsf/html"  
+	    xmlns:f="http://java.sun.com/jsf/core"  
+	    xmlns:p="http://primefaces.org/ui"
+	    xmlns:ui="http://java.sun.com/jsf/facelets"> 
+    
+	<h:head>
+		<title>AISA #{msg['lbl.footerTittle2']}</title>
+		<link rel="shortcut icon" href="img/pageBrowseIcon.ico"/>
+		<link rel="stylesheet" media="all" href="css/style.css"/>
+		<link rel="stylesheet" media="all" href="tabPanne/style.css"/>
+		<link rel="stylesheet" media="all" href="css/styleTab.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		<!-- JS -->
+		<script src="js/custom.js"></script>
+		<script src="js/disableRight-Click.js"></script>
+		
+		<!-- Tweet -->
+		<link rel="stylesheet" href="css/jquery.tweet.css" media="all"  /> 
+		<script src="js/tweet/jquery.tweet.js" ></script> 
+		<!-- ENDS Tweet -->
+		
+		<!-- superfish -->
+		<link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+		<script  src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+		<script  src="js/superfish-1.4.8/js/superfish.js"></script>
+		<script  src="js/superfish-1.4.8/js/supersubs.js"></script>
+		<!-- ENDS superfish -->
+		
+		<!-- prettyPhoto -->
+		<script  src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+		<link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css"  media="screen" />
+		<!-- ENDS prettyPhoto -->
+		
+		<!-- poshytip -->
+		<link rel="stylesheet" href="js/poshytip-1.1/src/tip-twitter/tip-twitter.css"  />
+		<link rel="stylesheet" href="js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css"  />
+		<script  src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+		<!-- ENDS poshytip -->
+		
+		<!-- GOOGLE FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'/>
+		
+		<!-- Flex Slider -->
+		<link rel="stylesheet" href="css/flexslider.css" />
+		<script src="js/jquery.flexslider-min.js"></script>
+		<!-- ENDS Flex Slider -->
+		
+		<!-- Less framework -->
+		<link rel="stylesheet" media="all" href="css/lessframework.css"/>
+		
+		<!-- modernizr -->
+		<script src="js/modernizr.js"></script>
+		
+		<!-- SKIN -->
+		<link rel="stylesheet" media="all" href="css/skin.css"/>
+		
+		<!-- reply move form -->
+		<script src="js/moveform.js"></script>
+	</h:head>
+	
+	<body lang="en">
+	
+		<header class="clearfix">
+			
+			<h:form id="formPresence">
+			
+				<p:dialog header="#{msg['lbl.menu3Sub3']}" widgetVar="presenceDialog" modal="true" showEffect="explode" width="800" height="500">  
+			        <p:outputPanel id="presenceDetail">
+			        	<p:tabView id="tabView"> 
+						    <p:tab id="tab1" title="#{msg['lbl.generalPresenceTab1']}">  
+						        <h:panelGrid columns="2" cellpadding="10">
+						        	<div style="text-align:center;">
+						        		<img src="img/presencesNational.png" alt="National" />
+						        	</div>
+						        </h:panelGrid>  
+						    </p:tab> 
+						    <p:tab id="tab2" title="#{msg['lbl.generalPresenceTab2']}">  
+						        <h:panelGrid columns="2" cellpadding="10">
+						        	<div style="text-align:center;">
+						        		<img src="img/presencesNorthamerica.png" alt="National" />
+						        	</div>
+						        </h:panelGrid>  
+						    </p:tab>
+						</p:tabView>
+			        </p:outputPanel>  
+			    </p:dialog>
+			    
+			    
+			    
+				<!-- top widget -->
+				<div id="top-widget-holder">
+					<div class="wrapper">
+						<div id="top-widget">
+							<div class="padding">
+							<ul  class="widget-cols clearfix">
+									<li class="first-col">
+										<div class="widget-block">
+											<h4>#{msg['lbl.generalWidgetTitle']}</h4>
+											<div class="recent-post">
+												<img src="img/brands/abb.png" alt="Post" />
+												<div class="post-head">
+													<a href="http://www.abb.com.mx/" target="_blank">#{msg['lbl.generalWidgetBrand1']}</a>
+												</div>
+											</div>
+											<div class="recent-post">
+												<img src="img/brands/allen.png" alt="Post" />
+												<div class="post-head">
+													<a href="http://ab.rockwellautomation.com/" target="_blank">#{msg['lbl.generalWidgetBrand2']}</a>
+												</div>
+											</div>
+											<div class="recent-post">
+												<img src="img/brands/federal-mogul.png" alt="Post" />
+												<div class="post-head">
+													#{msg['lbl.generalWidgetBrand3']}
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									<li class="second-col">
+										
+										<div class="widget-block">
+											<h4 style="color: #333;">#{msg['lbl.generalWidgetTitle']}</h4>
+											<div class="recent-post">
+												<img src="img/brands/mitsubishi.png" alt="Post" />
+												<div class="post-head">
+													<a href="http://www.mitsubishielectric.com/" target="_blank">#{msg['lbl.generalWidgetBrand4']}</a>
+												</div>
+											</div>
+											<div class="recent-post">
+												<img src="img/brands/moeller.png" alt="Post" />
+												<div class="post-head">
+													<a href="http://www.moeller.com.mx/" target="_blank">#{msg['lbl.generalWidgetBrand5']}</a>
+												</div>
+											</div>
+											<div class="recent-post">
+												<img src="img/brands/rittal.png" alt="Post" />
+												<div class="post-head">
+													<a href="http://www.rittal.com.mx/" target="_blank">#{msg['lbl.generalWidgetBrand6']}</a>
+												</div>
+											</div>
+										</div>
+										
+									</li>
+									
+									<li class="third-col">
+										
+										<div class="widget-block">
+											<h4 style="color: #333;">#{msg['lbl.generalWidgetTitle']}</h4>
+											<div class="recent-post">
+												<img src="img/brands/schneider.png" alt="Post" />
+												<div class="post-head">
+													<a href="http://www.schneider-electric.com/site/home/index.cfm/mx/" target="_blank">#{msg['lbl.generalWidgetBrand7']}</a>
+												</div>
+											</div>
+											<div class="recent-post">
+												<img src="img/brands/siemens.png" alt="Post" />
+												<div class="post-head">
+													<a href="http://www.siemens.com/entry/cc/en/" target="_blank">#{msg['lbl.generalWidgetBrand8']}</a>
+												</div>
+											</div>
+											<div class="recent-post">
+												<img src="img/brands/square_d.png" alt="Post" />
+												<div class="post-head">
+													#{msg['lbl.generalWidgetBrand9']}
+												</div>
+											</div>
+										</div>
+						         		
+									</li>
+									
+									<li class="fourth-col">
+										
+										<div class="widget-block">
+											<h4 style="color: #333;">#{msg['lbl.generalWidgetTitle']}</h4>
+											
+											<div class="recent-post">
+												<img src="img/brands/weidmuller.png" alt="Post" />
+												<div class="post-head">
+													<a href="http://www.weidmuller.com.mx" target="_blank">#{msg['lbl.generalWidgetBrand10']}</a>
+												</div>
+											</div>
+										</div>
+						         		
+									</li>	
+								</ul>				
+							</div>
+						</div>
+					</div>
+					<a href="#" id="top-open">Menu</a>
+				</div>
+				<!-- ENDS top-widget -->
+			
+				<div class="wrapper clearfix">
+					
+					<a href="index.xhtml" id="logo"><img  src="img/logo.png" alt="Zeni"/></a>
+					
+					
+					<nav>
+						<ul id="nav" class="sf-menu">
+							<li class="current-menu-item"><a href="index.xhtml"><h:outputText value="#{msg['lbl.menu1']}"></h:outputText></a></li>
+							<li><a href="#"><h:outputText value="#{msg['lbl.menu2']}"></h:outputText></a>
+								<ul>
+									<li><a href="portfolio/portfolioProjects.xhtml"><h:outputText value="#{msg['lbl.menu2Sub1']}"></h:outputText></a></li>
+									<li><a href="portfolio/portfolioDiagrams.xhtml"><h:outputText value="#{msg['lbl.menu2Sub2']}"></h:outputText></a></li>
+									<li><a href="portfolio/portfolioSoftware.xhtml"><h:outputText value="#{msg['lbl.menu2Sub3']}"></h:outputText></a></li>
+									<li><a href="portfolio/portfolioPanel.xhtml"><h:outputText value="#{msg['lbl.menu2Sub4']}"></h:outputText></a></li>
+									<li><a href="portfolio/portfolioInstalation.xhtml"><h:outputText value="#{msg['lbl.menu2Sub5']}"></h:outputText></a></li>
+									<li><a href="productsNservices.xhtml"><h:outputText value="#{msg['lbl.menu2Sub6']}"></h:outputText></a></li>
+								</ul>
+							</li>
+	                        <li><a href=""><h:outputText value="#{msg['lbl.menu3']}"></h:outputText></a>
+	                        	<ul>
+									<li><a href="missionNvission.xhtml"><h:outputText value="#{msg['lbl.footerTextT3MnV']}"></h:outputText></a></li>
+									<li><a href="values.xhtml"><h:outputText value="#{msg['lbl.footerTextT3Values']}"></h:outputText></a></li>
+									
+									<li>
+										<p:commandLink update=":formPresence:presenceDetail" oncomplete="presenceDialog.show()" value="#{msg['lbl.menu3Sub3']}">  
+					                      
+					                	</p:commandLink>
+					                
+									</li>
+								</ul>
+	                        </li>
+							<li><a href="contact.xhtml"><h:outputText value="#{msg['lbl.menu4']}"></h:outputText></a></li>
+						</ul>
+						<div id="combo-holder"></div>
+					</nav>
+				</div>
+			
+			
+			
+			
+			</h:form>
+		</header>
+		
+		
+		<!-- MAIN -->
+		<div id="main">	
+			<div class="wrapper clearfix">
+	        	
+				<!-- page content -->
+	        	<div id="page-content" class="clearfix">
+					
+					<p:dialog widgetVar="dialogWidget" id="dialog" modal="true">
+			            <p:panel>
+			                <h3>Dialog</h3>
+			                <p>
+			                    <h:outputText value="#{servicesBean.service.nombre}"/>
+			                </p>
+			            </p:panel>
+				    </p:dialog>
+					
+					<!-- fullwidth content -->
+					<div class="fullwidth-content">
+						
+						<h2 class="page-heading"><span><h:outputText value="#{msg['lbl.footerTittle2']}"></h:outputText></span></h2>
+						
+						<p style="text-align: justify;"><h:outputText value="#{msg['lbl.proNservDescriptionPanel']}"></h:outputText></p>
+						
+						
+						
+						
+						<h:form id="form">
+							<p:accordionPanel>
+								<!-- PRODUCTS -->
+							    <p:tab title="#{msg['lbl.generalUsProducts']}">
+							        
+									<h:form id="form">
+										<p:dataGrid var="product" value="#{productsBean.products}" columns="3"  
+									        rows="6" paginator="true"  
+									        paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"  
+									        >  
+									         
+									        <p:panel header="#{product.name}" style="text-align:center">  
+									            <h:panelGrid columns="1" style="width:100%">  
+									                <img src="img/products/#{product.nameImage}" alt="Post" />
+									                <h:outputText value="#{product.descripcion}" />  
+									  				
+									            </h:panelGrid>  
+									        </p:panel>  
+									  
+									    </p:dataGrid>
+									</h:form>
+									
+							    </p:tab>  
+								<!-- END PRODUCTS -->
+							   
+								<!-- SERVICES -->
+							    <p:tab title="#{msg['lbl.generalUsServices']}">  
+							        <h:panelGrid columns="2" cellpadding="10">
+							            				            
+							            <p:accordionPanel >  
+										    <p:tab title="#{msg['lbl.proNservSoftwareSubTitle']}">  <!-- SOFTWARE ENGINEERING-->
+										        <h:panelGrid columns="2" cellpadding="10" width="855">  
+										            <p:dataList value="#{servicesBean.servicesSoftware}" var="list" itemType="square">  
+													    <img src="img/ok.png" alt="Post" />
+													    <h7><h:outputText value="&nbsp;#{list.nombre}&nbsp;"></h:outputText></h7>
+													</p:dataList>
+													    
+										        </h:panelGrid>  
+										    </p:tab>  
+										    <p:tab title="#{msg['lbl.proNservElectricalSubTitle']}">  <!-- ELECTRICAL ENGINEERING-->
+										        <h:panelGrid columns="2" cellpadding="10" width="855">  
+										            <p:dataList value="#{servicesBean.servicesElectric}" var="list" itemType="square">  
+													    <img src="img/ok.png" alt="Post" />
+													    <h7><h:outputText value="&nbsp;#{list.nombre}&nbsp;"></h:outputText></h7>    
+													</p:dataList>
+													
+													
+													  
+										        </h:panelGrid>  
+										    </p:tab>
+										</p:accordionPanel>  
+							            
+							        </h:panelGrid>  
+							    </p:tab>
+							    <!-- END SERVICES -->  
+							</p:accordionPanel>
+
+							
+						</h:form>
+					</div>
+					<!-- ends fullwidth content -->
+					
+					
+					
+				</div>	        	
+	        	<!--  page content-->
+	        	
+	        	
+
+	        	
+			</div>
+		</div>
+		<!-- ENDS MAIN -->
+		
+		
+		<footer>
+			<div class="wrapper">
+				<ul  class="widget-cols clearfix">
+					<li class="first-col">						
+						<div class="widget-block">
+							<h4><h:outputText value="#{msg['lbl.footerTittle1']}"></h:outputText></h4>
+							<div class="recent-post">
+								<div class="post-head2">
+									<h:outputText value="#{msg['lbl.footerClient1Name']}"></h:outputText>
+									<span><h:outputText value="#{msg['lbl.footerClient9Name']}"></h:outputText></span>
+									<h:outputText value="#{msg['lbl.footerClient3Name']}"></h:outputText>
+								</div>
+							</div>
+							<div class="recent-post">
+								<div class="post-head2">
+									<a href="clients.xhtml" class="thumb"><h:outputText value="#{msg['lbl.footerClientMore']}"></h:outputText></a>
+								</div>
+							</div>
+		         		</div>
+					</li>
+					<li class="second-col">
+						<div class="widget-block">
+							<h4><h:outputText value="#{msg['lbl.footerTittle2']}"></h:outputText></h4>
+							<div class="recent-post">
+								<div class="post-head2">
+									<h:outputText value="#{msg['lbl.menu2Sub2']}"></h:outputText>
+									<span><h:outputText value="#{msg['lbl.menu2Sub3']}"></h:outputText></span>
+									<h:outputText value="#{msg['lbl.menu2Sub4']}"></h:outputText>
+									<span><h:outputText value="#{msg['lbl.menu2Sub5']}"></h:outputText></span>
+								</div>
+							</div>
+							<div class="recent-post">
+								<div class="post-head2">
+									<a href="productsNservices.xhtml" class="thumb"><h:outputText value="#{msg['lbl.footerServNProdtMore']}"></h:outputText></a>
+								</div>
+							</div>
+		         		</div>						
+					</li>
+					<li class="third-col">
+						<div class="widget-block">
+							<h4><h:outputText value="#{msg['lbl.footerTittle3']}"></h:outputText></h4>
+							<div class="recent-post">
+								<div class="post-head2">
+									<a href="missionNvission.xhtml"><h:outputText value="#{msg['lbl.footerTextT3MnV']}"></h:outputText></a>
+									<a href="values.xhtml"><span><h:outputText value="#{msg['lbl.footerTextT3Values']}"></h:outputText></span></a>
+								</div>
+							</div>
+		         		</div>
+					</li>
+					<li class="fourth-col">
+						<div class="widget-block">
+							<h4><h:outputText value="#{msg['lbl.footerTittle4']}"></h:outputText></h4>
+							<div class="recent-post">
+								<div class="post-head2">
+									<h:outputText value="#{msg['lbl.footerTtrademarks']}" style="text-align: justify;"></h:outputText>
+								</div>
+							</div>
+		         		</div>
+					</li>	
+				</ul>
+				
+				<div class="footer-bottom">
+					<div class="left"><h:outputText value="#{msg['lbl.generalDeveloperTitle']}"></h:outputText> <a target="_blank" href="#{msg['lbl.generalDeveloperUrl']}" ><h:outputText value="#{msg['lbl.generalDeveloperName']}"></h:outputText></a></div>
+					<div class="right">
+						<ul id="social-bar">
+							<li><a href="#"  title="Become a fan" class="poshytip"><img src="img/social/facebook.png"  alt="Facebook" /></a></li>
+							<li><a href="#" title="Follow my tweets" class="poshytip"><img src="img/social/twitter.png"  alt="twitter" /></a></li>
+							<li><a href="#"  title="Add to the circle" class="poshytip"><img src="img/social/plus.png" alt="Google plus" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+					
+	</body>
+</html>

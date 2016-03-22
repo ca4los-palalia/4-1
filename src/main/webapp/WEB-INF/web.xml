@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  version="2.5">
+  <!-- The bare minimum needed for JSF 2.0 is a servlet 2.5
+      declaration and the mapping for the FacesServlet.
+      Setting PROJECT_STAGE to Development is highly recommended
+      during initial development so that you get more helpful
+      error messages.
+      
+      From JSF 2.0 tutorial at http://www.coreservlets.com/JSF-Tutorial/jsf2/
+  -->
+  	<!--  -->
+  	<context-param>
+	    <param-name>javax.faces.PROJECT_STAGE</param-name>
+	    <param-value>Development</param-value>
+	</context-param>
+
+	<welcome-file-list>
+		<welcome-file>index.xhtml</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+  
+  	<!-- Starting JSF  -->
+	<servlet>
+		<servlet-name>Faces Servlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+	</servlet>
+	
+	<!--  JSF URL Mapping -->
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.xhtml</url-pattern>
+	</servlet-mapping>
+  
+	<!-- Theme app -->  
+	<context-param>  
+		<param-name>primefaces.THEME</param-name>  
+		<param-value>home</param-value>  
+	</context-param>
+	
+  
+</web-app>
